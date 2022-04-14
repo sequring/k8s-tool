@@ -1,6 +1,6 @@
 # knife8s Docker hub image
 
-* [3.8.1](https://github.com/sequring/knife8s/releases/tag/3.8.1) - helm v3.8.1, kubectl v1.23.4, alpine 3.15
+* [3.8.1](https://github.com/sequring/knife8s/releases/tag/3.8.1) - helm v3.8.1, kubectl v1.23.5, alpine latest
 
 ## Overview
 
