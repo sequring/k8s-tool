@@ -1,7 +1,7 @@
 # knife8s Docker hub image
 
 * [3.8.1](https://github.com/sequring/knife8s/releases/tag/3.8.1) - helm v3.8.1, kubectl v1.23.5, alpine latest
-
+* [2.8.0](https://github.com/sequring/knife8s/releases/tag/3.8.1) - helm v3.8.1, kubectl v1.23.5, alpine latest
 ## Overview
 
 This lightweight alpine docker image provides kubectl and helm binaries for working with a Kubernetes cluster. A local configured kubectl is a prerequisite to use helm per [helm documentation](https://github.com/kubernetes/helm/blob/master/docs/quickstart.md). This image is useful for general helm administration such as deploying helm charts and managing releases. Having bash installed allows for better support for troubleshooting by being able to exec / terminal in and run desired shell scripts. Git installed allows installation of [helm plugins](https://github.com/kubernetes/helm/blob/master/docs/plugins.md).
