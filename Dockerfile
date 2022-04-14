@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 
-ARG KUBE_VERSION="v1.23.5"
+ARG KUBE_VERSION="1.23.5"
 ARG HELM_VERSION="3.8.1"
 
 ARG TARGETOS="linux"
