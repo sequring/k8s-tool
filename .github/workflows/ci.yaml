@@ -1,11 +1,14 @@
 name: ci
 
 on:
+  schedule:
+    - cron: '0 10 * * 0'
   push:
     branches:
-      - 'main'
+      - '**'
     tags:
-      - '*'
+      - 'v*.*.*'
+
 
 jobs:
   docker:
