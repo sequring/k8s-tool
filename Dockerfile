@@ -4,8 +4,8 @@ FROM alpine:latest
 ARG KUBE_VERSION="v1.23.5"
 ARG HELM_VERSION="3.8.1"
 
-ARG TARGETOS
-ARG TARGETARCH
+ARG TARGETOS="linux"
+ARG TARGETARCH="amd64"
 
 RUN apk -U upgrade \
     && apk add --no-cache ca-certificates bash git openssh curl gettext jq k9s \
