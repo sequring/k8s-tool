@@ -18,8 +18,13 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Get smart tag
+        id: prepare
+        uses: Surgo/docker-smart-tag-action@v1
+        with:
+          docker_image:  sequring/knife8s
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: sequring/knife8s
+          tags: ${{ steps.prepare.outputs.tag }}
